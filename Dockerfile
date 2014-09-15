@@ -14,6 +14,7 @@ run apt-get install -y build-essential
 run apt-get install -y tcpdump
 run apt-get install -y screen
 run apt-get install -y emacs
+run apt-get install -y openjdk-7-jdk
 
 # Setup home environment
 run useradd -s /bin/bash dev
@@ -42,6 +43,14 @@ run ln -s /var/shared/.gitconfig
 run chown -R dev: /home/dev
 run chown -R dev: /home/dev/.vim
 
-#VOLUME ["/input","/output"]
+# add two more shared volumes
+run mkdir /input \
+&& touch /input/placeholder \
+&& chown -R dev:dev /input \
+&& mkdir /output \
+&& touch /output/placeholder \
+&& chown -R dev:dev /output
+volume ["/input","/output"]
 
+# run as root to allow docker build etc.
 #user dev
