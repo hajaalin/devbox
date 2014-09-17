@@ -5,6 +5,7 @@ run apt-get install -y mercurial
 run apt-get install -y git
 run apt-get install -y python
 run apt-get install -y curl
+run apt-get install -y wget
 run apt-get install -y vim
 run apt-get install -y strace
 run apt-get install -y diffstat
