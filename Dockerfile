@@ -16,6 +16,7 @@ run apt-get install -y tcpdump
 run apt-get install -y screen
 run apt-get install -y emacs
 run apt-get install -y openjdk-7-jdk
+run apt-get install -y maven
 
 # Setup home environment
 run useradd -s /bin/bash dev
