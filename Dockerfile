@@ -18,6 +18,9 @@ run apt-get install -y emacs
 run apt-get install -y openjdk-7-jdk
 run apt-get install -y maven
 
+run apt-get install -y python-dev python-setuptools gcc
+run easy_install SQLAlchemy
+
 # Setup home environment
 run useradd -s /bin/bash dev
 run mkdir /home/dev && chown -R dev: /home/dev
