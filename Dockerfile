@@ -21,6 +21,9 @@ run apt-get install -y maven
 run apt-get install -y python-dev python-setuptools gcc
 run easy_install SQLAlchemy
 
+run apt-get install -y gnuplot
+run apt-get install -y python-matplotlib
+
 # Setup home environment
 run useradd -s /bin/bash dev
 run mkdir /home/dev && chown -R dev: /home/dev
