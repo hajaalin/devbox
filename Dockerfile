@@ -24,6 +24,10 @@ run easy_install SQLAlchemy
 run apt-get install -y gnuplot
 run apt-get install -y python-matplotlib
 
+run wget https://bootstrap.pypa.io/get-pip.py
+run python get-pip.py
+run pip install pymysql
+
 # Setup home environment
 run useradd -s /bin/bash dev
 run mkdir /home/dev && chown -R dev: /home/dev
