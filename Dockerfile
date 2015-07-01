@@ -27,6 +27,7 @@ run apt-get install -y python-matplotlib
 run wget https://bootstrap.pypa.io/get-pip.py
 run python get-pip.py
 run pip install pymysql
+run pip install networkx
 
 # Setup home environment
 run useradd -s /bin/bash dev
